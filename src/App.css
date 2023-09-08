@@ -17,3 +17,15 @@ body {
   align-items: center;
   height: 100%;
 }
+
+.cool-button {
+  padding: 10px 40px;
+  border-radius: 25px;
+  background-color: aquamarine;
+}
+
+.cool-button:hover {
+  background-color: aqua;
+  transform: scale(1.01) translateY(-1px);
+}
+
