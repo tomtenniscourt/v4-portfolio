@@ -1,31 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.container {
+  text-align: center;
+  border: 1px solid #ccc;
+}
 
-body {
-  margin: 0;
-  padding: 0;
+.home-container {
+border: 1px solid red;
+margin-left: 100px;
+margin-right: 100px;
+margin-top: 25px;
+padding: 100px;
+}
+
+.skills-container {
+border: 1px solid red;
+margin-left: 100px;
+margin-right: 100px;
+margin-top: 25px;
+padding: 100px;
+}
+
+.projects-container {
+border: 1px solid red;
+margin-left: 100px;
+margin-right: 100px;
+margin-top: 25px;
+padding: 100px;
+}
+
+.about-container {
+border: 1px solid red;
+margin-left: 100px;
+margin-right: 100px;
+margin-top: 25px;
+padding: 100px;
+}
+
+.contact-container {
+border: 1px solid red;
+margin-left: 100px;
+margin-right: 100px;
+margin-top: 25px;
+padding: 100px;
+}
+
+.skills-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #FB1B1B;
-  font-family: 'Press Start 2P', cursive;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the spacing between skills as needed */
 }
 
-.center-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.skill {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
 }
-
-.cool-button {
-  padding: 10px 40px;
-  border-radius: 25px;
-  background-color: aquamarine;
-}
-
-.cool-button:hover {
-  background-color: aqua;
-  transform: scale(1.01) translateY(-1px);
-}
-
