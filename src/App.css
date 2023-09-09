@@ -3,7 +3,7 @@
   border: 1px solid #ccc;
 }
 
-.home-container {
+/* .home-container {
 border: 1px solid red;
 margin-left: 100px;
 margin-right: 100px;
@@ -36,12 +36,29 @@ border: 1px solid red;
 margin-left: 100px;
 margin-right: 100px;
 margin-top: 25px;
+} */
+
+.container, .home-container, .skills-container, .projects-container, .about-container, .contact-container {
+  min-height: 100vh;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
 }
+
+/*Centers the content vertically in each container (below code)*/
+
+/* .container, .home-container, .skills-container, .projects-container, .about-container, .contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Adjust the spacing between skills as needed */
+  gap: 10px; 
 }
 
 .skill {
