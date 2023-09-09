@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&display=swap');
+
+
 .container {
   text-align: center;
   border: 1px solid #ccc;
+  font-family: 'Source Code Pro', monospace;
 }
 
 /* .home-container {
@@ -66,4 +70,40 @@ margin-top: 25px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 20px;
+}
+
+/* Add this CSS to style the scroll-to links vertically */
+.container-links {
+    display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100%; /* Fill the entire height of the container */
+  margin-top: 10px; /* Add spacing between links and title */
+}
+
+/* Style the links as needed */
+.container-links a {
+  margin-bottom: 10px; /* Add spacing between links */
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Change link color as needed */
+  font-weight: bold; /* Adjust font weight as needed */
+  transition: color 0.3s ease; /* Add a smooth color transition effect */
+}
+
+/* Add a hover effect for the links */
+.container-links a:hover {
+  color: #007bff; /* Change link color on hover */
+  cursor: pointer;
+}
+
+.home-page-header {
+  font-size: 75px;
+}
+
+.picture {
+  height: 230px;
+  width: 200px;
+  border-radius: 20%;
+  border: 2px solid #333;
 }

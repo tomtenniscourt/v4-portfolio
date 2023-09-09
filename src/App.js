@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import "./App.css";
 import { motion, AnimatePresence } from "framer-motion";
 
+function scrollTo(target) {
+  document.querySelector(target).scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
 const skills = [
   "HTML5",
   "CSS",
@@ -22,9 +28,16 @@ function App() {
 return (
   <div className="container">
     <div className="home-container">
-      <h1>Tom Court: Software Engineer</h1>
+      <h1 class="home-page-header">Tom Court: Software Engineer</h1>
+      <img className="picture" src="https://i.imgur.com/NF2gNgt.png"></img>
+      <div className="container-links">
+        <a onClick={() => scrollTo("#skills")}>Skills</a>
+        <a onClick={() => scrollTo("#projects")}>Projects</a>
+        <a onClick={() => scrollTo("#about")}>About</a>
+        <a onClick={() => scrollTo("#contact")}>Contact</a>
+      </div>
     </div>
-    <div className="skills-container">
+    <div className="skills-container" id="skills">
       <h1>Skills and Experience</h1>
       <p className="about-p">
         I have just finished a three month intensive Software Engineering course
@@ -54,7 +67,7 @@ return (
         ))}
       </div>
     </div>
-    <div className="projects-container">
+    <div className="projects-container" id="projects">
       <h1>My Projects</h1>
       <div className="project-one">
         <h2 className="item-h2">Tic Tac Toe</h2>
@@ -135,11 +148,11 @@ return (
         </a>
       </div>
     </div>
-    <div className="about-container">
+    <div className="about-container" id="about">
       <h1>About Me</h1>
       <p>Hello There</p>
     </div>
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <h1>Contact</h1>
       <p>
         Tom Court
