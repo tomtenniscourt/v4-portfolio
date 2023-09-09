@@ -107,3 +107,27 @@ margin-top: 25px;
   border-radius: 20%;
   border: 2px solid #333;
 }
+
+@media (max-width: 768px) {
+  .container, .home-container, .skills-container, .projects-container, .about-container, .contact-container {
+    margin-left: 20px; /* Adjust the left margin for smaller screens */
+    margin-right: 20px; /* Adjust the right margin for smaller screens */
+    margin-top: 10px; /* Reduce top margin for smaller screens */
+  }
+
+  .home-page-header {
+    font-size: 36px; /* Reduce font size for smaller screens */
+  }
+
+  .picture {
+    height: auto; /* Adjust image height for smaller screens */
+    max-width: 100%; /* Make sure the image doesn't overflow on smaller screens */
+  }
+
+  .container-links {
+    flex-direction: row; /* Display links horizontally for smaller screens */
+    justify-content: space-around; /* Add spacing between links */
+  }
+
+  /* You can further customize styles for smaller screens as needed */
+}
