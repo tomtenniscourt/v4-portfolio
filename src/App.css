@@ -51,6 +51,10 @@ margin-top: 25px;
   margin-top: 25px;
 }
 
+.about-p {
+  text-align: justify;
+  margin: 15px;
+}
 /*Centers the content vertically in each container (below code)*/
 
 /* .container, .home-container, .skills-container, .projects-container, .about-container, .contact-container {
@@ -63,6 +67,10 @@ margin-top: 25px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px; 
+  justify-content: center; /* Center the skills horizontally */
+  align-items: center;
+  margin: 50px;
+  border: 1px;
 }
 
 .skill {
@@ -70,6 +78,9 @@ margin-top: 25px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 20px;
+  width: calc(25% - 20px); /* Distribute skills in rows of four */
+  text-align: center; /* Center the text within each skill box */
+  margin-bottom: 10px; /* Add spacing between rows */
 }
 
 /* Add this CSS to style the scroll-to links vertically */
@@ -119,6 +130,14 @@ margin-top: 25px;
     font-size: 36px; /* Reduce font size for smaller screens */
   }
 
+    h1 {
+    font-size: 24px; /* Adjust font size for h1 on smaller screens */
+  }
+
+  p {
+    font-size: 16px; /* Adjust font size for paragraphs on smaller screens */
+  }
+  
   .picture {
     height: auto; /* Adjust image height for smaller screens */
     max-width: 100%; /* Make sure the image doesn't overflow on smaller screens */
@@ -130,4 +149,18 @@ margin-top: 25px;
   }
 
   /* You can further customize styles for smaller screens as needed */
+
+  .skills-list {
+    flex-direction: column; /* Stack skills vertically on smaller screens */
+    align-items: flex-start; /* Align skills to the left on smaller screens */
+  }
+
+  .skill {
+    width: 100%; /* Full width for skills on smaller screens */
+    margin-right: 0; /* Remove right margin to avoid overflow */
+    margin-bottom: 10px; /* Reduce spacing between skills on smaller screens */
+  }
+
 }
+
+
