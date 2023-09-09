@@ -47,8 +47,7 @@ return (
         projects section.
         <br />
         <br />
-        I am actively seeking job opportunities where I can make meaningful
-        contributions, continuously learn, and grow as a professional. With a
+        I am actively seeking job opportunities where I can make contributions, continuously learn, and grow as a professional. With a
         solid foundation as a trained full stack engineer, I find the most
         fulfillment and joy working on the front end of projects.
         <br />
