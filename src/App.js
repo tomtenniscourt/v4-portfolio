@@ -23,6 +23,9 @@ const skills = [
   "PostgreSQL",
 ];
 
+const emailSubject = "Inquiry from Website";
+
+
 function App() {
  
 return (
@@ -38,32 +41,38 @@ return (
       </div>
     </div>
     <div className="skills-container" id="skills">
-      <h1>Skills and Experience</h1>
-      <p className="about-p">
-        I have just finished a three month intensive Software Engineering course
-        that taught the fundamentals of HTML5, CSS, and JavaScript, in order to
-        prepare myself for a career in Software Engineering and Development. A
-        collection of some applications I have built can be seen below in the
-        projects section.
-        <br />
-        <br />
-        I am actively seeking job opportunities where I can make contributions, continuously learn, and grow as a professional. With a
-        solid foundation as a trained full stack engineer, I find the most
-        fulfillment and joy working on the front end of projects.
-        <br />
-        <br />
-        If you have or hear of any exciting opportunities that aligns with my
-        skills and experience, I would be thrilled to hear from you! Please feel
-        free to connect with me on{" "}
-        <a href="https://www.linkedin.com/in/tom-court/">LinkedIn</a>, or
-        contact me using the links below.
-      </p>
-      <div className="skills-list">
-        {skills.map((skill, index) => (
-          <div key={index} className="skill">
-            {skill}
-          </div>
-        ))}
+      <div className="experience">
+        <h1>Experience</h1>
+        <p className="about-p">
+          I have just finished a three month intensive Software Engineering
+          course that taught the fundamentals of HTML5, CSS, and JavaScript, in
+          order to prepare myself for a career in Software Engineering and
+          Development. A collection of some applications I have built can be
+          seen below in the projects section.
+          <br />
+          <br />
+          I am actively seeking job opportunities where I can make
+          contributions, continuously learn, and grow as a professional. With a
+          solid foundation as a trained full stack engineer, I find the most
+          fulfillment and joy working on the front end of projects.
+          <br />
+          <br />
+          If you have or hear of any exciting opportunities that aligns with my
+          skills and experience, I would be thrilled to hear from you! Please
+          feel free to connect with me on{" "}
+          <a href="https://www.linkedin.com/in/tom-court/">LinkedIn</a>, or
+          contact me using the links below.
+        </p>
+      </div>
+      <div className="myskills">
+        <h1>My Skills</h1>
+        <div className="skills-list">
+          {skills.map((skill, index) => (
+            <div key={index} className="skill">
+              {skill}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
     <div className="projects-container" id="projects">
@@ -161,10 +170,50 @@ return (
         EC1V 1AQ
       </p>
       <div className="social-media">
-        <li>Instagram</li>
-        <li>Github</li>
-        <li>Twitter</li>
-        <li>Email</li>
+        <a
+          href="https://www.instagram.com/tomtenniscourt/?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="sm"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png"
+            alt="Link to Instagram"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tom-court/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="sm"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png"
+            alt="Link to LinkedIn"
+          />
+        </a>
+        <a
+          href="https://github.com/tomtenniscourt"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="sm"
+            src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
+            alt="Link to GitHub"
+          />
+        </a>
+        <a
+          href={`mailto:tomcourt94@icloud.com?subject=${encodeURIComponent(
+            emailSubject
+          )}`}
+        >
+          <img
+            className="email"
+            src="https://static.vecteezy.com/system/resources/previews/012/388/536/original/email-icon-retro-illustration-free-vector.jpg"
+            alt="Email Tom"
+          />
+        </a>
       </div>
     </div>
   </div>
