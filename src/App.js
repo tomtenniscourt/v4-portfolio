@@ -23,8 +23,11 @@ return (
       <img className="picture" src="https://i.imgur.com/NF2gNgt.png"></img>
       <div className="container-links">
         <a onClick={() => scrollTo("#skills")}>Skills and Experience</a>
+        <br />
         <a onClick={() => scrollTo("#projects")}>Projects</a>
+        <br />
         <a onClick={() => scrollTo("#about")}>About</a>
+        <br />
         <a onClick={() => scrollTo("#contact")}>Contact</a>
       </div>
     </div>
