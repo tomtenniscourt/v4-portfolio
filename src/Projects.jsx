@@ -50,7 +50,7 @@ function Projects(props) {
           Go to App
         </a>
       </div>
-      <div className="project-four">
+      {/* <div className="project-four">
         <h2 className="item-h2">Paint</h2>
         <p className="item-p">
           A JavaScript application that enables users to paint on a blank canvas
@@ -80,7 +80,7 @@ function Projects(props) {
         >
           Go to App
         </a>
-      </div>{" "}
+      </div>{" "} */}
     </div>
   );
 }

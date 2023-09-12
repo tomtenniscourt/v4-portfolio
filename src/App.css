@@ -143,6 +143,11 @@ margin-top: 25px;
     margin-top: 10px; /* Reduce top margin for smaller screens */
   }
 
+        .container-links {
+          flex-direction: column;
+          /* Keep links vertically stacked for smaller screens */
+        }
+        
   .home-page-header {
     font-size: 36px; /* Reduce font size for smaller screens */
   }

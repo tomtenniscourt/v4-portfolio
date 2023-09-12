@@ -4,7 +4,6 @@ import "./App.css";
 function Home (props) {
 return (
   <div>
-    <h1>hello</h1>
   </div>
 );
 }
