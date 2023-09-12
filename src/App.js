@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { motion, AnimatePresence } from "framer-motion";
+// import { motion, AnimatePresence } from "framer-motion";
 
 function scrollTo(target) {
   document.querySelector(target).scrollIntoView({
@@ -91,6 +91,15 @@ return (
         >
           Go to App
         </a>
+        <br />
+        <a
+          className="button-readme-tictactoe"
+          href="https://tomtenniscourt.github.io/tic_tac_toe_200623/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Go to README
+        </a>
       </div>
       <div className="project-two">
         <h2 className="item-h2">Dad Jokes</h2>
@@ -124,7 +133,7 @@ return (
         </a>
       </div>
 
-      <div className="project-four">
+      {/* <div className="project-four">
         <h2 className="item-h2">Paint</h2>
         <p className="item-p">
           A JavaScript application that enables users to paint on a blank canvas
@@ -154,7 +163,7 @@ return (
         >
           Go to App
         </a>
-      </div>
+      </div> */}
     </div>
     <div className="about-container" id="about">
       <h1>About Me</h1>
