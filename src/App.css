@@ -119,22 +119,6 @@ margin-top: 25px;
   border: 2px solid #333;
 }
 
-.sm {
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-  border-radius: 15%;
-  margin-top: 15px;
-}
-
-.email {
-  width: 30px;
-    height: 30px;
-    margin: 5px;
-    border-radius: 15%;
-    margin-top: 15px;
-}
-
 @media (max-width: 768px) {
   .container, .home-container, .skills-container, .projects-container, .about-container, .contact-container {
     margin-left: 20px; /* Adjust the left margin for smaller screens */
