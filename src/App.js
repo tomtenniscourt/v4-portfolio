@@ -24,26 +24,41 @@ function App() {
     <div className="container">
       {!showContent ? (
         <div className="landing-page">
-          <button onClick={handleEnterClick}>Enter</button>
+          <h1 className="landing-h1">
+            Tom Court
+            <br />
+            Software Engineer
+          </h1>
+          <button className="enter-button" onClick={handleEnterClick}>
+            Enter Website
+          </button>
         </div>
       ) : (
         <div className="home-container">
           <Home />
-          <h1 className="home-page-header">Tom Court: Software Engineer</h1>
+          <h1 className="home-page-header">Hello, I'm Tom</h1>
           <img
             className="picture"
             src="https://i.imgur.com/NF2gNgt.png"
             alt="Tom Court"
           ></img>
           <div className="container-links">
-            <a onClick={() => scrollTo("#skills")}>Skills and Experience</a>
+            <a className="links" onClick={() => scrollTo("#skills")}>
+              Skills and Experience
+            </a>
             <br />
-            <a onClick={() => scrollTo("#projects")}>Projects</a>
+            <a className="links" onClick={() => scrollTo("#projects")}>
+              Projects
+            </a>
             <br />
-            <a onClick={() => scrollTo("#about")}>About</a>
-            <br />
-            <a onClick={() => scrollTo("#contact")}>Contact</a>
+            <a className="links"
+            onClick={() => scrollTo("#about")}>
+              About
+            </a>
+            {/* <br />
+            <a onClick={() => scrollTo("#contact")}>Contact</a> */}
           </div>
+          <Contact />
         </div>
       )}
 
@@ -56,13 +71,14 @@ function App() {
           <div className="projects-container" id="projects">
             <Projects />
           </div>
+
           <div className="about-container" id="about">
             <About />
           </div>
 
-          <div className="contact-container" id="contact">
+          {/* <div className="contact-container" id="contact">
             <Contact />
-          </div>
+          </div> */}
         </div>
       )}
     </div>

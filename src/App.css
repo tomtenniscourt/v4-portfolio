@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&display=swap');
 
+.landing-h1 {
+  font-size: 75px;
+}
+
+.enter-button { 
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.enter-button:hover {
+  background-color: #007bff;
+  color: white;
+}
 
 .container {
   text-align: center;
@@ -91,10 +104,13 @@ margin-top: 25px;
   align-items: center; /* Center horizontally */
   height: 100%; /* Fill the entire height of the container */
   margin-top: 10px; /* Add spacing between links and title */
+  border: 1px solid #ccc;
+  margin-left: 65vh;
+  margin-right: 65vh;
 }
 
 /* Style the links as needed */
-.container-links a {
+.container-links {
   margin-bottom: 10px; /* Add spacing between links */
   text-decoration: none; /* Remove underline from links */
   color: #333; /* Change link color as needed */
@@ -133,6 +149,16 @@ margin-top: 25px;
   margin: 5px;
   border-radius: 15%;
   margin-top: 15px;
+}
+
+.sm:hover, .email:hover {
+      transform: scale(1.5);
+      transform: translateY(-2px);
+}
+
+
+.links:hover {
+      transform: translateX(+2px);
 }
 
 

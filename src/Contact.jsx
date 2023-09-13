@@ -7,14 +7,7 @@ const emailSubject = "Inquiry from Website";
 function Contact(props) {
   return (
     <div>
-      <h1>Contact</h1>
-      <p>
-        Tom Court
-        <br />
-        London
-        <br />
-        EC1V 1AQ
-      </p>
+      
       <div className="social-media">
         <a
           href="https://www.instagram.com/tomtenniscourt/?hl=en"
